@@ -1,0 +1,84 @@
+2019-08-03 02:18:50,257 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 02:19:04,251 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,251 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,255 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,255 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,262 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,262 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,272 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,272 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,277 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,277 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,279 [ERROR]  The model predicted the custom action 'action_get_times', but you didn't configure an endpoint to run this custom action. Please take a look at the docs and set an endpoint configuration via the --endpoints flag. https://rasa.com/docs/rasa/core/actions
+2019-08-03 02:19:04,280 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:19:04,282 [WARNI]  Circuit breaker tripped. Stopped predicting more actions for sender 'default'
+2019-08-03 02:20:21,661 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 02:20:32,190 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:20:32,233 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:21:38,545 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:21:38,561 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:22:13,572 [INFO ]  Killing Sanic server now.
+2019-08-03 02:22:44,350 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 02:24:08,213 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 02:24:18,821 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:24:44,417 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:24:45,033 [ERROR]  Encountered an exception while running action 'action_get_times'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-03 02:52:52,259 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 02:58:30,533 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 03:07:04,959 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 03:10:50,783 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found
+2019-08-03 03:10:50,870 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/favicon.ico'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-08-03 03:11:00,368 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/webhook'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhook not found
+2019-08-03 03:12:38,777 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 03:14:19,514 [ERROR]  Exception occurred while handling uri: 'http://3493a27e.ngrok.io/'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL / not found
+2019-08-03 03:14:20,353 [ERROR]  Exception occurred while handling uri: 'http://3493a27e.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2019-08-03 03:31:17,344 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 03:40:51,073 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 03:54:33,177 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 04:04:41,772 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 04:15:26,649 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 04:30:34,717 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 20:17:39,127 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-03 20:37:09,159 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 11:28:14,506 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 13:18:15,149 [INFO ]  Starting Rasa server on http://localhost:5005

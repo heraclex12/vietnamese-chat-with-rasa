@@ -1,0 +1,56 @@
+slots:
+  timezone:
+    type: text
+
+entities:
+  - timezone
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - thanks
+  - time_zone
+
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_default
+- utter_nextwork
+- action_get_times
+- utter_timez
+
+templates:
+  utter_greet:
+  - text: "Này! Bạn khỏe chứ?"
+
+  utter_cheer_up:
+  - text: "Một chút đáng yêu:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Cái này có giúp bạn không ta?"
+
+  utter_happy:
+  - text: "Quá tốt rồi!"
+
+  utter_nextwork:
+  - text: "Bạn còn cần gì nữa hem nè :<"
+
+  utter_timez:
+  - text: "Bây giờ ở {timezone} là:"
+
+  utter_goodbye:
+  - text: "Tạm biệt bạn"
+  
+  utter_default:
+  - text: "Bạn nói cái gì tui hỏng có hỉu"
+  - text: "Xung quanh anh toàn là nước eiii"
+  - text: "Tôi là siêu nhân"
+  - text: "Trời trong xanh, gió long lanh eii"
