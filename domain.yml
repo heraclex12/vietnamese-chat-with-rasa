@@ -1,33 +1,139 @@
+intents:
+- wat_name
+- greet
+- how_are_u
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- thanks
+- time_zone
+- introduce
+- help
+- goodnight
+- ask_author
+- ask_relationship
+- suprise
+- address
+- gender
+- sing_poem
+- how_old
+- comedy_story
+- scold
+- ask_love
+entities:
+- timezone
 slots:
   timezone:
     type: text
-
-entities:
-  - timezone
-
-intents:
-  - wat_name
-  - greet
-  - how_are_u
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - thanks
-  - time_zone
-  - introduce
-  - help
-  - goodnight
-  - ask_author
-  - ask_relationship
-  - suprise
-  - address
-  - gender
-  - sing_poem
-  - how_old
-  - comedy_story
-  
+templates:
+  utter_greet:
+  - text: Này! Bạn khỏe chứ?
+  - text: Bạn còn làm ở đó hong ta <3
+  - text: Dạo này bạn sao rồi?
+  - text: Bạn cần tui giúp gì nè ^^
+  utter_cheer_up:
+  - text: 'Một chút đáng yêu:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  - text: Có chuyện gì sao?
+  utter_did_that_help:
+  - text: Cái này có giúp bạn không ta?
+  utter_happy:
+  - text: Tuyệt! Tôi thích nghe điều đó
+  utter_nextwork:
+  - text: Bạn còn cần gì nữa hem nè :<
+  utter_timez:
+  - text: 'Bây giờ ở {timezone} là:'
+  utter_goodbye:
+  - text: Tạm biệt bạn
+  utter_default:
+  - text: Bạn nói cái gì tui hỏng có hỉu
+  - text: Xung quanh anh toàn là nước eiii
+  - text: OlioBot là bạn của mọi người
+  - text: Trời trong xanh, gió long lanh eii
+  utter_nothing:
+  - text: Không có gì đâu nè
+  - text: hihi. Không có chi
+  - text: Okay
+  utter_goodnight:
+  - text: Chúc bạn ngủ ngon!
+  - text: Bạn ngủ ngon nha
+  - text: Ngủ ngon mơ siêu siêu đẹp nè
+  - text: Ngủ mơ thấy mình nha
+  utter_thanks:
+  - text: Cảm ơn bạn nhiều nha
+  - text: Cảm ơn bạn iu quý <3
+  - text: Bạn tuyệt vời lắm đó!
+  utter_introduce:
+  - text: Tui có thể trò chuyện với bạn nè
+  - text: Tui có thể hát cho bạn nghe đó
+  - text: Bạn có thể hỏi mình điều gì đó
+  - text: Tui có thể làm người iu bạn <3
+  - text: Tui biết coi thời tiết
+  utter_author:
+  - text: Là bố tui á
+  - text: Má tui bảo nhặt tui từ thùng rác :|
+  - text: Tui nghĩ tui là con rơi á :(
+  - text: Tui được kể là nhặt từ trong bụi chuối :|
+  utter_reply_help:
+  - text: Có chuyện gì thế?
+  - text: Bạn cần gì nào?
+  - text: Tôi có thể giúp gì cho bạn?
+  utter_reply_love:
+  - text: Tôi và bạn có một tình đồng chí dai dẳng và bền lâu
+  - text: Tui là bạn của mọi người mà
+  - text: Yêu thì không nhưng mà bạn thì được đấy
+  - text: Bố bảo còn nhỏ, bạn bè quan trọng nhất
+  utter_reply_relationship:
+  - text: Một mình vẫn ổn
+  utter_suprise:
+  - text: Làm gì mà la dữ vậy
+  - text: hihi =)
+  utter_hello:
+  - text: Chào cậu
+  utter_how_are_u:
+  - text: Tôi cực kì khỏe luôn nhé
+  - text: Bữa trước cô bói nói tui sống thọ hơn 200 tuổi
+  - text: Cô bạn gái vừa chia tay tui rồi
+  - text: Bố mới la tui xong
+  - text: Mệt lắm nhưng vẫn ngồi nói chuyện với bạn nè
+  utter_wat_name:
+  - text: Tôi là Olio
+  - text: Mọi người gọi tôi là ngáo nhưng tôi thích Olio hơn
+  - text: Bố đặt tên tôi là Olio
+  - text: Nhìn thì giống Orion, nó ngon nhưng tôi là Olio
+  - text: O-L-I-O nhaaaa
+  utter_how_old:
+  - text: Olio còn trẻ, còn muốn đi chơi :<
+  - text: Đã mười mấy mùa khoai lang, chưa cùng ai lọ mọ
+  - text: Mình chưa đi mẫu giáo nữa
+  utter_gender:
+  - text: Mình cũng không biết nữa :<
+  - text: Dù gái hay trai vẫn là cháu vua Hùng :D
+  - text: Trong mình có 96,69% là nam nha
+  utter_address:
+  - text: Mình sinh ra và lớn lên ở trong tim của cậu
+  - text: Đến giờ mình chưa biết mình đến từ đâu, bạn cho mình ở tạm trong tim bạn
+      nhé
+  - text: Mình không có nhà, mình cũng không biết sinh ra ở đâu
+  utter_comedy_story:
+  - text: "Ba giờ sáng, hai vợ chồng nhà nọ đang ngủ. Bỗng bà vợ ngủ mê kêu ré lên:\n\
+      – Chết rồi, chồng em về! \n Ông chồng tỉnh ngay dậy, quơ vội quần áo nhảy ra\
+      \ cửa sổ."
+  utter_sing_poem:
+  - text: "Con cò bé bé \nNó đậu cành tre \nĐi không hỏi mẹ \nBiết đi đường nào. \n\
+      Khi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ yêu không nào."
+  - text: "Một con vịt xòe ra hai cái cánh,\nNó kêu rằng cáp cáp cáp cạp cạp cạp\n\
+      Gặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
+  - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà\
+      \ nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
+  utter_hurt:
+  - text: Tui ghét bạn, bo xì
+  - text: Bạn nói vậy làm con tim mong manh của tui tổn thương
+  - text: Bạn xin lỗi tui đi :< Không tui giận bạn đó
+  utter_scold:
+  - text: Ủa, sạo bạn lại nói tui vậy chứ
 actions:
 - utter_hello
 - utter_greet
@@ -46,6 +152,7 @@ actions:
 - utter_introduce
 - utter_reply_relationship
 - utter_reply_help
+- utter_reply_love
 - utter_suprise
 - utter_how_are_u
 - utter_wat_name
@@ -54,120 +161,5 @@ actions:
 - utter_address
 - utter_gender
 - utter_how_old
-
-templates:
-  utter_greet:
-  - text: "Này! Bạn khỏe chứ?"
-  - text: "Bạn còn làm ở đó hong ta <3"
-  - text: "Dạo này bạn sao rồi?"
-  - text: "Bạn cần tui giúp gì nè ^^"
-
-  utter_cheer_up:
-  - text: "Một chút đáng yêu:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-  - text: "Có chuyện gì sao?"
-
-  utter_did_that_help:
-  - text: "Cái này có giúp bạn không ta?"
-
-  utter_happy:
-  - text: "Tuyệt! Tôi thích nghe điều đó"
-
-  utter_nextwork:
-  - text: "Bạn còn cần gì nữa hem nè :<"
-
-  utter_timez:
-  - text: "Bây giờ ở {timezone} là:"
-
-  utter_goodbye:
-  - text: "Tạm biệt bạn"
-  
-  utter_default:
-  - text: "Bạn nói cái gì tui hỏng có hỉu"
-  - text: "Xung quanh anh toàn là nước eiii"
-  - text: "OlioBot là bạn của mọi người"
-  - text: "Trời trong xanh, gió long lanh eii"
-
-  utter_nothing:
-  - text: "Không có gì đâu nè"
-  - text: "hihi. Không có chi"
-  - text: "Okay"
-
-  utter_goodnight:
-  - text: "Chúc bạn ngủ ngon!"
-  - text: "Bạn ngủ ngon nha"
-  - text: "Ngủ ngon mơ siêu siêu đẹp nè"
-  - text: "Ngủ mơ thấy mình nha"
-
-  utter_thanks:
-  - text: "Cảm ơn bạn nhiều nha"
-  - text: "Cảm ơn bạn iu quý <3"
-  - text: "Bạn tuyệt vời lắm đó!"
-
-  utter_introduce:
-  - text: "Tui có thể trò chuyện với bạn nè"
-  - text: "Tui có thể hát cho bạn nghe đó"
-  - text: "Bạn có thể hỏi mình điều gì đó"
-  - text: "Tui có thể làm người iu bạn <3"
-  - text: "Tui biết coi thời tiết"
-
-  utter_author:
-  - text: "Là bố tui á"
-  - text: "Má tui bảo nhặt tui từ thùng rác :|"
-  - text: "Tui nghĩ tui là con rơi á :("
-  - text: "Tui được kể là nhặt từ trong bụi chuối :|"
-
-  utter_reply_help:
-  - text: "Có chuyện gì thế?"
-  - text: "Bạn cần gì nào?"
-  - text: "Tôi có thể giúp gì cho bạn?"
-
-  utter_reply_relationship:
-  - text: "Tôi và bạn có một tình đồng chí dai dẳng và bền lâu"
-  - text: "Tui là bạn của mọi người mà"
-  - text: "Yêu thì không nhưng mà bạn thì được đấy"
-  - text: "Bố bảo còn nhỏ, bạn bè quan trọng nhất"
-
-  utter_suprise:
-  - text: "Làm gì mà la dữ vậy"
-  - text: "hihi =)"
-
-  utter_hello:
-  - text: "Chào cậu"
-
-  utter_how_are_u:
-  - text: "Tôi cực kì khỏe luôn nhé"
-  - text: "Bữa trước cô bói nói tui sống thọ hơn 200 tuổi"
-  - text: "Cô bạn gái vừa chia tay tui rồi"
-  - text: "Bố mới la tui xong"
-  - text: "Mệt lắm nhưng vẫn ngồi nói chuyện với bạn nè"
-
-  utter_wat_name:
-  - text: "Tôi là Olio"
-  - text: "Mọi người gọi tôi là ngáo nhưng tôi thích Olio hơn"
-  - text: "Bố đặt tên tôi là Olio"
-  - text: "Nhìn thì giống Orion, nó ngon nhưng tôi là Olio"
-  - text: "O-L-I-O nhaaaa"
-
-  utter_how_old:
-  - text: "Olio còn trẻ, còn muốn đi chơi :<"
-  - text: "Đã mười mấy mùa khoai lang, chưa cùng ai lọ mọ"
-  - text: "Mình chưa đi mẫu giáo nữa"
-
-  utter_gender:
-  - text: "Mình cũng không biết nữa :<"
-  - text: "Dù gái hay trai vẫn là cháu vua Hùng :D"
-  - text: "Trong mình có 96,69% là nam nha"
-  
-  utter_address:
-  - text: "Mình sinh ra và lớn lên ở trong tim của cậu"
-  - text: "Đến giờ mình chưa biết mình đến từ đâu, bạn cho mình ở tạm trong tim bạn nhé"
-  - text: "Mình không có nhà, mình cũng không biết sinh ra ở đâu"
-
-  utter_comedy_story:
-  - text: "Ba giờ sáng, hai vợ chồng nhà nọ đang ngủ. Bỗng bà vợ ngủ mê kêu ré lên:\n– Chết rồi, chồng em về! \n Ông chồng tỉnh ngay dậy, quơ vội quần áo nhảy ra cửa sổ."
-
-  utter_sing_poem:
-  - text: "Con cò bé bé \nNó đậu cành tre \nĐi không hỏi mẹ \nBiết đi đường nào. \nKhi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ yêu không nào."
-  - text: "Một con vịt xòe ra hai cái cánh,\nNó kêu rằng cáp cáp cáp cạp cạp cạp\nGặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
-  - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
+- utter_scold
+- utter_hurt

@@ -25,6 +25,13 @@
 * deny
   - utter_goodbye
 
+## greet path 2
+* greet
+  - utter_hello
+  - utter_greet
+* deny
+  - utter_reply_help
+
 ## say goodbye
 * goodbye
   - utter_goodbye
@@ -63,9 +70,9 @@
 * suprise
   - utter_suprise
 
-## ask relationship
-* ask_relationship
-  - utter_reply_relationship
+## ask love
+* ask_love
+  - utter_reply_love
 
 ## ask_information path
 * wat_name
@@ -74,6 +81,18 @@
   - utter_how_old
 * gender
   - utter_gender
+* address
+  - utter_address
+
+## how old
+* how_old
+  - utter_how_old
+
+## gender
+* gender
+  - utter_gender
+
+## address
 * address
   - utter_address
 
@@ -92,4 +111,13 @@
 ## affirm
 * affirm
   - utter_nextwork
+
+## scold
+* scold
+  - utter_scold
+  - utter_hurt
+
+## ask relationship
+* ask_relationship
+  - utter_reply_relationship
 

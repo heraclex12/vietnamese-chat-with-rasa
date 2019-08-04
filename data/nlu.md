@@ -22,6 +22,8 @@
 - okay
 
 ## intent:deny
+- hong
+- không á
 - không nhé
 - không bao giờ
 - tôi không nghĩ vậy
@@ -88,7 +90,7 @@
 - ai là người tạo ra bạn
 - ai đẻ ra bạn
 
-## intent:asK_relationship
+## intent:ask_love
 - bạn có yêu tôi không
 - tôi làm người yêu bạn được không
 - tôi làm bạn của bạn được không
@@ -152,4 +154,21 @@
 ## intent:comedy_story
 - bạn biết kể chuyện không
 - kể chuyện cho mình nghe đi
+
+## intent:ask_relationship
+- bạn có người yêu chưa
+- bạn có bạn không
+- bạn có thích ai không
+- bạn có yêu ai không
+
+## intent:scold
+- khùng quá
+- điên quá
+- chập mạch
+- hâm quá
+- mất dạy
+- vô học
+- bạn bị ngu hả
+- thần kinh
+- ngáo quá
 
