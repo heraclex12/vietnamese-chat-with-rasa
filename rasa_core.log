@@ -82,3 +82,4 @@ sanic.exceptions.NotFound: Requested URL /favicon.ico not found
 2019-08-03 20:37:09,159 [INFO ]  Starting Rasa server on http://localhost:5005
 2019-08-04 11:28:14,506 [INFO ]  Starting Rasa server on http://localhost:5005
 2019-08-04 13:18:15,149 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 17:34:34,073 [INFO ]  Starting Rasa server on http://localhost:5005
