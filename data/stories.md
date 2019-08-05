@@ -44,11 +44,6 @@
   - utter_nothing
   - utter_nextwork
 
-## say time_zone
-* time_zone
-  - utter_timez
-  - action_get_times
-
 ## say introduce
 * introduce
   - utter_introduce
@@ -121,3 +116,6 @@
 * ask_relationship
   - utter_reply_relationship
 
+## look up dictionary
+* lookUp_english
+  - action_lookUp_en

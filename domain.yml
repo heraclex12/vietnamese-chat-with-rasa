@@ -8,7 +8,6 @@ intents:
 - mood_great
 - mood_unhappy
 - thanks
-- time_zone
 - introduce
 - help
 - goodnight
@@ -22,11 +21,13 @@ intents:
 - comedy_story
 - scold
 - ask_love
+- lookUp_english
 entities:
-- timezone
+  - enword
+
 slots:
-  timezone:
-    type: text
+   enword:
+     type: unfeaturized
 templates:
   utter_greet:
   - text: Này! Bạn khỏe chứ?
@@ -134,6 +135,8 @@ templates:
   - text: Bạn xin lỗi tui đi :< Không tui giận bạn đó
   utter_scold:
   - text: Ủa, sạo bạn lại nói tui vậy chứ
+  utter_hereuare:
+  - text: Bằng sự thông thái của tôi, đây là thứ bạn cần tìm
 actions:
 - utter_hello
 - utter_greet
@@ -143,7 +146,6 @@ actions:
 - utter_goodbye
 - utter_default
 - utter_nextwork
-- action_get_times
 - utter_timez
 - utter_nothing
 - utter_goodnight
@@ -163,3 +165,5 @@ actions:
 - utter_how_old
 - utter_scold
 - utter_hurt
+- action_lookUp_en
+- utter_hereuare

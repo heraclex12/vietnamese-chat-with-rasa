@@ -1,0 +1,10 @@
+
+rasa\.db
+
+rasa_core\.log
+
+tracker\.db
+
+duckling/
+
+models/

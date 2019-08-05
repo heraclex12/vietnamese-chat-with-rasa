@@ -83,3 +83,187 @@ sanic.exceptions.NotFound: Requested URL /favicon.ico not found
 2019-08-04 11:28:14,506 [INFO ]  Starting Rasa server on http://localhost:5005
 2019-08-04 13:18:15,149 [INFO ]  Starting Rasa server on http://localhost:5005
 2019-08-04 17:34:34,073 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 21:14:11,037 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-04 21:15:26,247 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-08-04 21:18:47,163 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker?include_events=ALL'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker not found
+2019-08-04 21:18:49,640 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/status'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /status not found
+2019-08-04 21:19:51,029 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-08-04 21:19:51,069 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/version'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /version not found
+2019-08-04 21:28:19,306 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:19,309 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:20,392 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:20,394 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:21,787 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:21,789 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:22,290 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:22,291 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:22,384 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:22,385 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:22,811 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:22,813 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:25,343 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:25,345 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:25,693 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:25,694 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:25,773 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:25,774 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-04 21:28:46,359 [ERROR]  Exception occurred while handling uri: 'http://localhost:5005/conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found
+2019-08-04 21:28:46,362 [WARNI]  Creating event for sender 'a0f226ba2e974ae2b92a82b479e900bc' failed. Error: 404, Not Found, body='b'Error: Requested URL /conversations/a0f226ba2e974ae2b92a82b479e900bc/tracker/events not found''
+2019-08-05 22:52:27,883 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 22:52:48,009 [INFO ]  Killing Sanic server now.
+2019-08-05 22:53:39,696 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 22:53:49,943 [ERROR]  Encountered an exception while running action 'action_lookUp_en'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-05 22:54:42,324 [INFO ]  Killing Sanic server now.
+2019-08-05 22:55:11,862 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 22:55:19,854 [ERROR]  Encountered an exception while running action 'action_lookUp_en'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-05 22:55:33,620 [INFO ]  Killing Sanic server now.
+2019-08-05 23:09:19,064 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 23:09:29,414 [ERROR]  Encountered an exception while running action 'action_lookUp_en'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-05 23:10:49,615 [INFO ]  Killing Sanic server now.
+2019-08-05 23:18:30,408 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 23:42:25,805 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-05 23:44:44,063 [INFO ]  Killing Sanic server now.
+2019-08-05 23:46:33,529 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 00:46:06,124 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-06 00:46:18,814 [ERROR]  Failed to run custom action 'action_lookUp_en'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: Cannot connect to host localhost:5055 ssl:None [Connection refused]
+2019-08-06 00:46:18,814 [ERROR]  Encountered an exception while running action 'action_lookUp_en'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+2019-08-06 00:47:27,648 [INFO ]  Killing Sanic server now.
+2019-08-06 00:47:28,069 [ERROR]  Exception occurred while handling uri: 'http://31693fea.ngrok.io/webhooks/facebook/webhook'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2019-08-06 00:47:28,073 [ERROR]  Exception occurred while handling uri: 'http://31693fea.ngrok.io/webhooks/facebook/webhook'
+Traceback (most recent call last):
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/razent/anaconda3/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /webhooks/facebook/webhook not found
+2019-08-06 00:47:42,337 [INFO ]  Starting Rasa server on http://localhost:5005
